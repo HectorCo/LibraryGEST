@@ -8,6 +8,7 @@ import { ProductsModule } from './products/products.module';
 @NgModule({
   declarations: [
     AppComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -16,6 +17,7 @@ import { ProductsModule } from './products/products.module';
     ProductsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 export class AppModule { }
