@@ -38,10 +38,12 @@
     </thead>
     <tbody *ngFor="let libro of libros">
       <tr>
-        <th scope="row">{{ libro.titulo }}</th>
+
+       <th scope="row" ><a [routerLink]="[]">{{ libro.titulo }}</a></th>
         <td>{{ libro.autor }}</td>
         <td>{{ libro.referencia }}</td>
         <td>{{ libro.estado }}</td>
+
       </tr>
     </tbody>
   </table>
