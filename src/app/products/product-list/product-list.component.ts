@@ -17,6 +17,7 @@ constructor(public libroService: LibrosService) { }
     this.libros = this.libroService.listaLibros();
   }
 
-
+  /* TODO: Completar método de agregar libros */
+  agregarLibro(){}
 
 }
