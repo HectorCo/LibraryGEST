@@ -1,0 +1,63 @@
+
+
+<!-- <div *ngIf='libro' class='panel panel-primary'>
+    <div  class='panel-heading'>
+        {{ libro.titulo }}
+    </div> -->
+
+<div *ngIf="!borrado" class='panel-body'>
+    <div class='row'>
+        <div class='col-md-6'>
+            <div class='row'>
+                <div class='col-md-3'>Titulo:</div>
+                <div class='col-md-6'>
+                    <input  type="text" name=""
+                    [disabled]="!editando">
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-3'>Referencia:</div>
+                <div class='col-md-6'>
+                    <input  type="text" name=""
+                    [disabled]="!editando">
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-3'>Autor:</div>
+                <div class='col-md-6'>
+                    <input  type="text" name=""
+                    [disabled]="!editando">
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-3'>Disponibilidad:</div>
+                <div class='col-md-6'>
+                    <input  type="text" name=""  disabled>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-3'>
+                    <button type="button" class="btn btn-danger"
+                    (click)='borrarLibro()'>
+                        Borrar
+                    </button>
+                </div>
+                <div class='col-md-3'>
+                    <button type="button" class="btn btn-primary"
+                    (click)="editar()">
+
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<button type="button" class="btn btn-primary" [routerLink]="['/products']">Atrás</button>
+<!-- </div> -->

@@ -1,3 +1,10 @@
+
+<div class='panel panel-primary'>
+
+<div class='panel-heading'>
+   <h4> Ahora mismo la biblioteca dispone de {{ libros && libros.length ? libros.length + ' ' : '' }} títulos</h4>
+</div>
+
 <div class="panel-body">
   <div class="row">
     <div class="form-group col-md-6">
@@ -8,7 +15,7 @@
   <hr />
   <div class="row">
     <div class="form-group col-md-6">
-      <label class="control-label" for="titulo">Títuo:</label>
+      <label class="control-label" for="titulo">Título:</label>
       <input class="form-control" type="text" name="titulo" />
     </div>
 
@@ -39,7 +46,7 @@
     <tbody *ngFor="let libro of libros">
       <tr>
 
-       <th scope="row" ><a [routerLink]="[]">{{ libro.titulo }}</a></th>
+       <th scope="row" ><a [routerLink]="['/libros', libro.id]">{{ libro.titulo }}</a></th>
         <td>{{ libro.autor }}</td>
         <td>{{ libro.referencia }}</td>
         <td>{{ libro.estado }}</td>
@@ -47,4 +54,5 @@
       </tr>
     </tbody>
   </table>
+</div>
 </div>
