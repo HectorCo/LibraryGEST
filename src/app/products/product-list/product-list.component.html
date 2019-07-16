@@ -9,7 +9,7 @@
   <div class="row">
     <div class="form-group col-md-6">
       <p>Filtrar por título:</p>
-      <input class="form-control" type="text" />
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  introduce el título del libro que buscas">
     </div>
   </div>
   <hr />
@@ -43,7 +43,7 @@
         <th scope="col">Estado</th>
       </tr>
     </thead>
-    <tbody *ngFor="let libro of libros">
+    <tbody *ngFor="let libro of libros | filter:searchText">
       <tr>
 
        <th scope="row" ><a [routerLink]="['/libros', libro.id]">{{ libro.titulo }}</a></th>
