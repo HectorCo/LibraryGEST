@@ -1,27 +1,44 @@
-# LibraryGEST
+# LibraryGEST por Héctor Company Ortega
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+App en Angular 8 diseñada para llevar la gestión de una biblioteca a nivel de control de libros, usuarios y préstamos principalmente.
 
-## Development server
+Las funciones principales
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  - Listado de todos los libros de la biblioteca (500)
+  - Acceso individualizado a la información de cada libro
+  - Posibilidad de realizar una búsqueda por título del libro
+  - Posibilidad de añadir libros a la biblioteca
 
-## Code scaffolding
+### 1er. Wireframe 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[![Wireframes](https://imgur.com/Bj1LXH8.jpg)](https://imgur.com/Bj1LXH8)
 
-## Build
+### Primer commit con los elementos principales
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  13-07-19 - NavBar y Home enrutados (864995b4e2aa1cd6efbc657b91f7c7358c1d597a)
 
-## Running unit tests
+### Commit con carga de listado de libros
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  14-07-19 - Carga de libros desde archivo "libros-list.ts"(3d76c4e51f34e3a8d7f220abb0d0e6c3a9b00265)
 
-## Running end-to-end tests
+[![Lista libros](https://imgur.com/Cl2qfKs.jpg)](https://imgur.com/Cl2qfKs)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Commit con diseño de pantalla principal de la aplicación  
 
-## Further help
+* Pantalla principal "Home"
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+15-07-19 - Me pareció interesante en esta pantalla incluir, además de un logo, mi CV y también el enlace al respositorio de GitHUB de la aplicación.
+(0c7aa7c9fbaaf73c90929dfa4a42b269a9c77b5e)
+
+
+[![LibraryGEST Home](https://imgur.com/46Tkvay.jpg)](https://imgur.com/46Tkvay)
+
+### Commit con diseño de pantalla detalle de libro
+
+* Pantalla detalle del libro
+
+16-07-19 - Pantalla de detalle libro con los botones para borrar el producto, editarlo o volver l menú anterior.
+
+[![LibraryGEST Detalle Libro](https://imgur.com/Wr3x99n.jpg)](https://imgur.com/Wr3x99n)
+
+
