@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LibrosService } from '../../shared/services/libros.service';
 import { ActivatedRoute } from '@angular/router';
+import { Libro, libros } from "src/app/data/libros-list";
+
 
 @Component({
   selector: 'app-product-detail',
@@ -10,6 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductDetailComponent implements OnInit {
   public id: any;
   public libro: any = {};
+  libros: Array<Libro> = libros;
 
 
   constructor(
@@ -27,7 +30,9 @@ export class ProductDetailComponent implements OnInit {
 
   }
 
-  borrarLibro(){}
+  borrarLibro(){
+    libros.splice(0, 0);
+  }
 
   editar(){}
 }
