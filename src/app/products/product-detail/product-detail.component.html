@@ -1,68 +1,61 @@
-<div class="panel-heading">
+<br>
+<br>
+<div class="panel-heading text-center">
   <h1>{{ libro.titulo }}</h1>
 </div>
+<br>
 
-<div class="panel-body">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-3">Titulo:</div>
-        <div class="col-md-6">
-          <input
-            type="text"
-            [disabled]="!editando"
-            placeholder="{{ libro.titulo }}"
-          />
-        </div>
+<div class="container">
+<div class="input-group mb-1">
+    <div class="input-group-prepend ">
+      <span class="input-group-text" id="basic-addon1">Título&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <input type="text" class="form-control col-sm-2" placeholder="{{ libro.titulo }}" [disabled]="!editando">
+  </div>
+  <div class="input-group mb-1">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Referencia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </div>
-      <div class="row">
-        <div class="col-md-3">Referencia:</div>
-        <div class="col-md-6">
-          <input
-            type="text"
-            [disabled]="!editando"
-            placeholder="{{ libro.referencia }}"
-          />
+      <input type="text" class="form-control col-sm-2" placeholder="{{ libro.referencia }}" [disabled]="!editando">
+    </div>
+    <div class="input-group mb-1">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Autor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
+        <input type="text" class="form-control col-sm-2" placeholder="{{ libro.autor }}" [disabled]="!editando">
       </div>
-      <div class="row">
-        <div class="col-md-3">Autor:</div>
-        <div class="col-md-6">
-          <input
-            type="text"
-            [disabled]="!editando"
-            placeholder="{{ libro.autor }}"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">Disponibilidad:</div>
-        <div class="col-md-6">
-          <input
-            type="text"
-            name=""
-            [disabled]="!editando"
-            placeholder="{{ libro.estado }}"
-          />
+      <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Disponibilidad</span>
+          </div>
+          <input type="text" class="form-control col-sm-2" placeholder="{{ libro.estado }}" [disabled]="!editando">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-3">
-          <button type="button" class="btn btn-danger" (click)="borrarLibro()">
-            Borrar
+      <!-- <div class="panel-heading"> -->
+  <div class="d-flex justify-content-around">
+      <div class="col-md-6">
+
+
+  <br>
+  <br>
+        <div class="d-flex justify-content-around">
+          <div>
+            <button type="button" class="btn btn-danger" (click)="borrarLibro()">
+              Borrar
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn bg-success" (click)="editar()">
+              Editar
+            </button>
+          </div>
+          <div>
+          <button type="button" class="btn btn-primary" [routerLink]="['/products']">
+            Atrás
           </button>
-        </div>
-        <div class="col-md-3">
-          <button type="button" class="btn bg-success" (click)="editar()">
-            Editar
-          </button>
+
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<button type="button" class="btn btn-primary" [routerLink]="['/products']">
-  Atrás
-</button>
