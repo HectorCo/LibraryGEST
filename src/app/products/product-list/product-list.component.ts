@@ -8,18 +8,13 @@ import { LibrosService } from "../../shared/services/libros.service";
   styleUrls: ["./product-list.component.scss"]
 })
 export class ProductListComponent implements OnInit {
-
   libros: Array<Libro> = libros;
-
-
 
   constructor(public libroService: LibrosService) {}
 
   ngOnInit() {
     this.libros = this.libroService.listaLibros();
   }
-
-  /* TODO: Completar método de agregar libros */
 
   agregarLibro(titulo, autor, referencia) {
     libros.splice(0, 0, {
@@ -29,6 +24,5 @@ export class ProductListComponent implements OnInit {
       referencia: referencia.value,
       estado: 2
     });
-
   }
 }
