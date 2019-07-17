@@ -9,6 +9,7 @@ import { LibrosService } from "../../shared/services/libros.service";
 })
 export class ProductListComponent implements OnInit {
   libros: Array<Libro> = libros;
+  searchText;
 
   constructor(public libroService: LibrosService) {}
 

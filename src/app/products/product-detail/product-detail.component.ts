@@ -13,6 +13,7 @@ export class ProductDetailComponent implements OnInit {
   public id: any;
   public libro: any = {};
   libros: Array<Libro> = libros;
+  editando = false;
 
 
   constructor(
