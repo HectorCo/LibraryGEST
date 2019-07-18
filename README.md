@@ -42,3 +42,6 @@ Las funciones principales
 [![LibraryGEST Detalle Libro](https://imgur.com/Wr3x99n.jpg)](https://imgur.com/Wr3x99n)
 
 
+### Presentación del proyecto
+
+https://docs.google.com/presentation/d/e/2PACX-1vRQxIcvKr3FWIBP-jD8Uslc9KyRX9rnZL-xvI2UbSIYBGTDc4ddFjIvt9c-qxyVLbd3Xfx8De5Ov__o/pub?start=false&loop=false&delayms=60000
