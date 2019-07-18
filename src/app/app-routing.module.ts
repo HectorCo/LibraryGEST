@@ -10,16 +10,7 @@ const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'products', component:ProductListComponent},
   {path: 'libros/:id', component: ProductDetailComponent},
-
-  {
-    path: '404',
-    component: NotfoundComponent
-  },
-  {
-    path: '**',
-    redirectTo: '404'
-  }
-];
+  {path:'**', component: NotfoundComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
