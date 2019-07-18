@@ -49,3 +49,9 @@ https://docs.google.com/presentation/d/e/2PACX-1vRQxIcvKr3FWIBP-jD8Uslc9KyRX9rnZ
 ### Proyecto LibraryGEST en CDMON
 
 http://www.hecthor.com.mialias.net
+
+Usuario:
+hectho350
+
+Contraseña:
+lll669aF
